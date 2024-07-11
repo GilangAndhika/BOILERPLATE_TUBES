@@ -9,7 +9,9 @@ import (
 
 var IteungIPAddress string = os.Getenv("ITEUNGBEV1")
 
-var MongoString string = os.Getenv("MONGOTB")
+var MONGO string = os.Getenv("MONGOSTRING")
+
+var MongoString string = "mongodb+srv://barbarx:714220013@webservice.mxagifq.mongodb.net/"
 
 var DBParfumemongoinfo = atdb.DBInfo{
 	DBString: MongoString,

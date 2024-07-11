@@ -10,9 +10,9 @@ import (
 
 	"github.com/barganakukuhraditya/BOILERPLATE_TUBES/url"
 
-	"github.com/gofiber/swagger"
-	"github.com/gofiber/fiber/v2"
 	_ "github.com/barganakukuhraditya/BOILERPLATE_TUBES/docs"
+	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/swagger"
 )
 
 // @title SWAGGER TUGAS BESAR
@@ -39,7 +39,7 @@ func main() {
 	app.Get("/swagger/*", swagger.HandlerDefault) // default
 
 	app.Get("/swagger/*", swagger.New(swagger.Config{ // custom
-		URL: "http://example.com/doc.json",
+		URL:         "http://example.com/doc.json",
 		DeepLinking: false,
 		// Expand ("list") or Collapse ("none") tag groups by default
 		DocExpansion: "none",
