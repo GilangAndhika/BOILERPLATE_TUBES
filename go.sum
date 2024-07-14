@@ -73,6 +73,12 @@ github.com/gryzlegrizz/BE_TugasBesar v0.0.3 h1:xLRW8J1XOvtDV2WubL/7+G1XqhxdAcDtA
 github.com/gryzlegrizz/BE_TugasBesar v0.0.3/go.mod h1:CmzTIrOdGspgYLJ3UC3hQan1kFA6tEu7aKEEd3zoD3c=
 github.com/gryzlegrizz/BE_TugasBesar v0.0.4 h1:pg8paQb3MYL4l0FsbCUAkklHeFhywcT0m8wGRSFcvw4=
 github.com/gryzlegrizz/BE_TugasBesar v0.0.4/go.mod h1:CmzTIrOdGspgYLJ3UC3hQan1kFA6tEu7aKEEd3zoD3c=
+github.com/gryzlegrizz/BE_TugasBesar v0.0.5 h1:lShYfbvfRMWw3yaR12uMT8VstQvpDNSkVas5kGtmoXI=
+github.com/gryzlegrizz/BE_TugasBesar v0.0.5/go.mod h1:CmzTIrOdGspgYLJ3UC3hQan1kFA6tEu7aKEEd3zoD3c=
+github.com/gryzlegrizz/BE_TugasBesar v0.0.6 h1:RO1ytXYbVtQJ0WVG1EPK22Lvdvv2llG+qh5isLBl8Mw=
+github.com/gryzlegrizz/BE_TugasBesar v0.0.6/go.mod h1:CmzTIrOdGspgYLJ3UC3hQan1kFA6tEu7aKEEd3zoD3c=
+github.com/gryzlegrizz/BE_TugasBesar v0.0.7 h1:bUrzUTwl3Tw+gecvD3o0DKRCRKyDHa9YCsb2RbavH44=
+github.com/gryzlegrizz/BE_TugasBesar v0.0.7/go.mod h1:CmzTIrOdGspgYLJ3UC3hQan1kFA6tEu7aKEEd3zoD3c=
 github.com/hashicorp/go-uuid v1.0.2/go.mod h1:6SBZvOh/SIDV7/2o3Jml5SYk/TvGqwFJ/bN7x4byOro=
 github.com/jcmturner/aescts/v2 v2.0.0/go.mod h1:AiaICIRyfYg35RUkr8yESTqvSy7csK90qZ5xfvvsoNs=
 github.com/jcmturner/dnsutils/v2 v2.0.0/go.mod h1:b0TnjGOvI/n42bZa+hmXL+kFJZsFT7G4t3HTlQ184QM=

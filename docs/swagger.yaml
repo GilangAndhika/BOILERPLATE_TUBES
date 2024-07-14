@@ -57,6 +57,30 @@ definitions:
         example: 100ml
         type: string
     type: object
+  controller.User:
+    properties:
+      _id:
+        example: "123456789"
+        type: string
+      address:
+        example: Jl. Jalan
+        type: string
+      email:
+        example: user
+        type: string
+      idrole:
+        example: "123456789"
+        type: string
+      password:
+        example: user
+        type: string
+      phone:
+        example: "08123456789"
+        type: string
+      username:
+        example: user
+        type: string
+    type: object
 host: tb-parfume2024-34a7b650de40.herokuapp.com
 info:
   contact:
@@ -94,6 +118,29 @@ paths:
       summary: Delete data parfume.
       tags:
       - Parfume
+  /hapus/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Hapus data user.
+      parameters:
+      - description: Masukan ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+        "400":
+          description: Bad Request
+        "500":
+          description: Internal Server Error
+      summary: Delete data user.
+      tags:
+      - User
   /insert:
     post:
       consumes:
@@ -162,6 +209,63 @@ paths:
       summary: Get By ID Data Parfume.
       tags:
       - Parfume
+  /post:
+    post:
+      consumes:
+      - application/json
+      description: Input data user.
+      parameters:
+      - description: Payload Body [RAW]
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/controller.User'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.User'
+        "400":
+          description: Bad Request
+        "500":
+          description: Internal Server Error
+      summary: Insert data user.
+      tags:
+      - User
+  /put/{id}:
+    put:
+      consumes:
+      - application/json
+      description: Ubah data user.
+      parameters:
+      - description: Masukan ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Payload Body [RAW]
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/controller.User'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.User'
+        "400":
+          description: Bad Request
+        "500":
+          description: Internal Server Error
+      summary: Update data user.
+      tags:
+      - User
   /update/{id}:
     put:
       consumes:
@@ -193,6 +297,48 @@ paths:
       summary: Update data parfume.
       tags:
       - Parfume
+  /user:
+    get:
+      consumes:
+      - application/json
+      description: Mengambil semua data user.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.User'
+      summary: Get All Data User.
+      tags:
+      - User
+  /user/{id}:
+    get:
+      consumes:
+      - application/json
+      description: Ambil per ID data user.
+      parameters:
+      - description: Masukan ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.User'
+        "400":
+          description: Bad Request
+        "404":
+          description: Not Found
+        "500":
+          description: Internal Server Error
+      summary: Get By ID Data User.
+      tags:
+      - User
 schemes:
 - https
 - http
