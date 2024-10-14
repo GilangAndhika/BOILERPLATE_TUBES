@@ -9,8 +9,8 @@ import (
 
 	"net/http"
 
-	inimodel "github.com/gryzlegrizz/BE_TugasBesar/model"
-	cek "github.com/gryzlegrizz/BE_TugasBesar/module"
+	inimodel "github.com/GilangAndhika/BE_TugasBesar/model"
+	cek "github.com/GilangAndhika/BE_TugasBesar/module"
 	"github.com/barganakukuhraditya/BOILERPLATE_TUBES/config"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
